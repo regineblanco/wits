@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+	/*POFILES*/
+	.row {
+		margin: 0 auto;
+	}	
+
+	.profile {
+		width: 200px;
+		height: 200px;
+		border: 1px solid black;
+		padding: 10px;
+		margin: 10px;
+		text-align: center;
+	}
+
+	.profile img {
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+	}
+
+	/*MODAL*/
+		
+	.zoom-profile {
+		border: 1px solid black;
+		width: 350px;
+		height: 400px;
+		margin: 0 auto;
+	}
+
+	.top-profile {
+		text-align: center;
+	}
+
+	.zoom-profile img {
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+		vertical-align: middle;
+		margin: 10px;
+	}
+
+	.zoom-profile .names {
+		display: inline-block;
+		text-align: left;
+		padding-top: 10px;
+		vertical-align: middle;
+	}
+
+	.zoom-profile span {
+		font-size: 12px;
+		display: block;
+	}
+
+	.zoom-profile a {
+		color: black;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<!-- PROFILES -->
+	<h1> Developers </h1>
+	<div class="row">
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/cielo.jpg">
+			<h4>Cielo Fe Blasing</h4>
+			<span class="title">Project Manager</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/billy.jpg">
+			<h4>Billy Wilson Arante</h4>
+			<span class="title">Back-end Leader</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/haru.jpg">
+			<h4>Wo Harmon Scheiz</h4>
+			<span class="title">Front-end Leader</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/gerard.jpg">
+			<h4>Gerard Ambrocio</h4>
+			<span class="title">Web Developer</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/dp.jpg">
+			<h4>Regine Blanco</h4>
+			<span class="title">Web Developer</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/marlon.jpg">
+			<h4>Marlon Buella</h4>
+			<span class="title">Web Developer</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/jonathan.jpg">
+			<h4>Jonathan Doydora</h4>
+			<span class="title">Web Developer</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/rj.jpg">
+			<h4>Felizardo Lim Jr.</h4>
+			<span class="title">Web Developer</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/geodel.jpg">
+			<h4>Geodel Natabio</h4>
+			<span class="title">Web Developer</span>
+		</div>
+		<div class="col-xs-4 profile" data-toggle="modal" data-target="#profile-modal">
+			<img src="photos/vince.jpg">
+			<h4>Vincent Pleyto</h4>
+			<span class="title">Web Developer</span>
+		</div>
+	</div>
+
+	<!-- MODAL -->
+	<div id="profile-modal" class="modal fade" role="dialog">
+  		<div class="modal-dialog">
+
+			<div class="zoom-profile modal-content">
+				<div class="modal-header">
+	 				<button type="button" class="close" data-dismiss="modal">&times;</button>
+	 			</div>
+	
+				<!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+				<div class="modal-body">
+					<div class="top-profile">
+						<img src="photos/dp.jpg">
+						<div class="names">
+							<h4>Regine Blanco</h4>
+							<span>regineannblanco@yahoo.com</span>
+							<span>09266305900</span>
+							<button class="btn btn-default">DM</button>
+							<button class="btn btn-default">Chat</button>
+						</div>
+					</div>
+					<div class="bottom-profile">	
+						<hr>
+						<h4>Portfolio</h4>
+						<ul>
+							<a><li>Lorem ipsum</li></a>
+							<a><li>Beki ipsum</li></a>
+							<a><li>Ipsum ipsum</li></a>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
